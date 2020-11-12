@@ -6,28 +6,28 @@
 [![License](https://img.shields.io/badge/license-GPL%20V3-blue.svg?longCache=true)](https://www.gnu.org/licenses/gpl-3.0.en.html)
 
 
-trojan多用户管理部署程序
+programa de implementación de gestión multiusuario troyano
 
-## 功能
-- 在线web页面和命令行两种方式管理trojan多用户
-- 启动 / 停止 / 重启 trojan 服务端
-- 支持流量统计和流量限制
-- 命令行模式管理, 支持命令补全
-- 集成acme.sh证书申请
-- 生成客户端配置文件
-- 在线实时查看trojan日志
-- 在线trojan和trojan-go随时切换
-- 支持trojan://分享链接和二维码分享(二维码仅限web页面)
+## Caracteristicas
+-Administrar troyanos multiusuario de dos maneras: página web en línea y línea de comandos
+-Iniciar / detener / reiniciar el servidor troyano
+-Soporta estadísticas de tráfico y restricción de tráfico.
+-Gestión del modo de línea de comando, finalización del comando de soporte
+-Aplicación de certificado acme.sh integrada
+-Generar archivo de configuración del cliente
+-Ver registros de troyanos en línea en tiempo real
+-Cambia entre troyano online y trojan-go en cualquier momento
+-Support trojan: // enlace para compartir y compartir código QR (el código QR solo está disponible en páginas web)
 
-## 安装方式
-*trojan使用请提前准备好服务器可用的域名*  
-
-###  a. 一键脚本安装
+## Metodo de instalacion Veintitres
+* Por favor, prepare el nombre de dominio disponible del servidor con anticipación para el uso de troyanos *
+### a. Instalación de script con un clic 25
 ```
-#安装/更新
+#Instalar actualización 27
 source <(curl -sL https://git.io/trojan-install)
 
-#卸载
+#Desinstalar
+
 source <(curl -sL https://git.io/trojan-install) --remove
 
 ```
