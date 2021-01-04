@@ -1,0 +1,87 @@
+=============================================== ============
+Autor: mack-a
+Versión actual: v2.2.16
+Github: https://github.com/mack-a/v2ray-agent
+Descripción: Script de coexistencia siete en uno
+=============================================== ============
+1. Instalación
+2. Cualquier combinación de instalación
+------------------------- Gestión de herramientas ----------------------- ------
+3. Ver cuenta
+4. Reemplaza la estación de camuflaje.
+5. Actualice el certificado
+6. Reemplazar el nodo CDN
+7. Gestión multiusuario
+8.Verificación hombre-máquina ipv6
+------------------------- Gestión de versiones ----------------------- ------
+Gestión de versiones 9.core
+10. Actualice Trojan-Go
+11. Actualizar script
+12. Instale BBR
+------------------------- Gestión de scripts ----------------------- ------
+13. Ver registro
+14. Desinstalar secuencia de comandos
+=============================================== ============
+El acceso directo se creó correctamente, ejecute [vasma] para volver a abrir el script.
+por favor elija:
+
+
+
+===================== VLESS TCP TLS/XTLS-direct/XTLS-splice ======================
+
+ ---> 通用json(VLESS+TCP+TLS)
+    {"port":"443","ps":"pv.networkvpn.ml_VLESS_XTLS/TLS-direct_TCP","tls":"tls","id":"4d490835-72c8-f8de-66d4-8d2576c4d014","host":"pv.networkvpn.ml","type":"none","net":"tcp","add":"pv.networkvpn.ml","allowInsecure":0,"method":"none","peer":""}
+
+    V2Ray、Xray 目前无通用订阅，需要手动配置，VLESS TCP、XTLS和TCP大部分一样，其余内容不变，请注意手动输入的流控flow类型，v2ray-core v4.32.1之后不支持XTLS，Xray-core支持，建议使用Xray-core
+
+
+================================ VLESS WS TLS CDN ================================
+
+ ---> 通用json(VLESS+WS+TLS)
+    {"port":"443","ps":"pv.networkvpn.ml_vless_ws","tls":"tls","id":"4d490835-72c8-f8de-66d4-8d2576c4d014","aid":"0","v":"2","host":"pv.networkvpn.ml","type":"none","path":"/dtvbotws","net":"ws","add":"domain08.qiu4.ml","allowInsecure":0,"method":"none","peer":"pv.networkvpn.ml"}
+
+
+================================= VMess TCP TLS  =================================
+
+ ---> 通用json(VMess+TCP+TLS)
+    {"port":"443","ps":"pv.networkvpn.ml_vmess_tcp","tls":"tls","id":"4d490835-72c8-f8de-66d4-8d2576c4d014","aid":"1","v":"2","host":"pv.networkvpn.ml","type":"http","path":"/dtvbottcp","net":"tcp","add":"pv.networkvpn.ml","allowInsecure":0,"method":"none","peer":"pv.networkvpn.ml","obfs":"http","obfsParam":"pv.networkvpn.ml"}
+
+ ---> 通用vmess(VMess+TCP+TLS)链接
+    vmess://eyJwb3J0IjoiNDQzIiwicHMiOiJwdi5uZXR3b3JrdnBuLm1sX3ZtZXNzX3RjcCIsInRscyI6InRscyIsImlkIjoiNGQ0OTA4MzUtNzJjOC1mOGRlLTY2ZDQtOGQyNTc2YzRkMDE0IiwiYWlkIjoiMSIsInYiOiIyIiwiaG9zdCI6InB2Lm5ldHdvcmt2cG4ubWwiLCJ0eXBlIjoiaHR0cCIsInBhdGgiOiJcL2R0dmJvdHRjcCIsIm5ldCI6InRjcCIsImFkZCI6InB2Lm5ldHdvcmt2cG4ubWwiLCJhbGxvd0luc2VjdXJlIjowLCJtZXRob2QiOiJub25lIiwicGVlciI6InB2Lm5ldHdvcmt2cG4ubWwiLCJvYmZzIjoiaHR0cCIsIm9iZnNQYXJhbSI6InB2Lm5ldHdvcmt2cG4ubWwifQ==
+
+ ---> 二维码 vmess(VMess+TCP+TLS)
+https://api.qrserver.com/v1/create-qr-code/?size=400x400&data=vmess://eyJwb3J0IjoiNDQzIiwicHMiOiJwdi5uZXR3b3JrdnBuLm1sX3ZtZXNzX3RjcCIsInRscyI6InRscyIsImlkIjoiNGQ0OTA4MzUtNzJjOC1mOGRlLTY2ZDQtOGQyNTc2YzRkMDE0IiwiYWlkIjoiMSIsInYiOiIyIiwiaG9zdCI6InB2Lm5ldHdvcmt2cG4ubWwiLCJ0eXBlIjoiaHR0cCIsInBhdGgiOiJcL2R0dmJvdHRjcCIsIm5ldCI6InRjcCIsImFkZCI6InB2Lm5ldHdvcmt2cG4ubWwiLCJhbGxvd0luc2VjdXJlIjowLCJtZXRob2QiOiJub25lIiwicGVlciI6InB2Lm5ldHdvcmt2cG4ubWwiLCJvYmZzIjoiaHR0cCIsIm9iZnNQYXJhbSI6InB2Lm5ldHdvcmt2cG4ubWwifQ==
+
+
+================================ VMess WS TLS CDN ================================
+
+ ---> 通用json(VMess+WS+TLS)
+    {"port":"443","ps":"pv.networkvpn.ml_vmess_ws","tls":"tls","id":"4d490835-72c8-f8de-66d4-8d2576c4d014","aid":"1","v":"2","host":"pv.networkvpn.ml","type":"none","path":"/dtvbotvws","net":"ws","add":"domain08.qiu4.ml","allowInsecure":0,"method":"none","peer":"pv.networkvpn.ml"}
+
+ ---> 通用vmess(VMess+WS+TLS)链接
+    vmess://eyJwb3J0IjoiNDQzIiwicHMiOiJwdi5uZXR3b3JrdnBuLm1sX3ZtZXNzX3dzIiwidGxzIjoidGxzIiwiaWQiOiI0ZDQ5MDgzNS03MmM4LWY4ZGUtNjZkNC04ZDI1NzZjNGQwMTQiLCJhaWQiOiIxIiwidiI6IjIiLCJob3N0IjoicHYubmV0d29ya3Zwbi5tbCIsInR5cGUiOiJub25lIiwicGF0aCI6IlwvZHR2Ym90dndzIiwibmV0Ijoid3MiLCJhZGQiOiJkb21haW4wOC5xaXU0Lm1sIiwiYWxsb3dJbnNlY3VyZSI6MCwibWV0aG9kIjoibm9uZSIsInBlZXIiOiJwdi5uZXR3b3JrdnBuLm1sIn0=
+
+ ---> 二维码 vmess(VMess+WS+TLS)
+https://api.qrserver.com/v1/create-qr-code/?size=400x400&data=vmess://eyJwb3J0IjoiNDQzIiwicHMiOiJwdi5uZXR3b3JrdnBuLm1sX3ZtZXNzX3dzIiwidGxzIjoidGxzIiwiaWQiOiI0ZDQ5MDgzNS03MmM4LWY4ZGUtNjZkNC04ZDI1NzZjNGQwMTQiLCJhaWQiOiIxIiwidiI6IjIiLCJob3N0IjoicHYubmV0d29ya3Zwbi5tbCIsInR5cGUiOiJub25lIiwicGF0aCI6IlwvZHR2Ym90dndzIiwibmV0Ijoid3MiLCJhZGQiOiJkb21haW4wOC5xaXU0Lm1sIiwiYWxsb3dJbnNlY3VyZSI6MCwibWV0aG9kIjoibm9uZSIsInBlZXIiOiJwdi5uZXR3b3JrdnBuLm1sIn0=
+
+
+==================================  Trojan TLS  ==================================
+
+ ---> Trojan(TLS)
+    trojan://4d490835-72c8-f8de-66d4-8d2576c4d014@pv.networkvpn.ml:443?peer=pv.networkvpn.ml&sni=pv.networkvpn.ml
+
+ ---> 二维码 Trojan(TLS)
+https://api.qrserver.com/v1/create-qr-code/?size=400x400&data=trojan%3a%2f%2f4d490835-72c8-f8de-66d4-8d2576c4d014%40pv.networkvpn.ml%3a443%3fpeer%3dpv.networkvpn.ml%26sni%3dpv.networkvpn.ml%23pv.networkvpn.ml_trojan
+
+
+================================  Trojan WS TLS   ================================
+
+ ---> Trojan-Go(WS+TLS) Shadowrocket
+    trojan://4d490835-72c8-f8de-66d4-8d2576c4d014@domain08.qiu4.ml:443?allowInsecure=0&&peer=pv.networkvpn.ml&sni=pv.networkvpn.ml&plugin=obfs-local;obfs=websocket;obfs-host=pv.networkvpn.ml;obfs-uri=/dtvbottws#pv.networkvpn.ml_trojan_ws
+
+ ---> 二维码 Trojan-Go(WS+TLS) Shadowrocket
+https://api.qrserver.com/v1/create-qr-code/?size=400x400&data=trojan%3a%2f%2f4d490835-72c8-f8de-66d4-8d2576c4d014%40domain08.qiu4.ml%3a443%3fallowInsecure%3d0%26peer%3dpv.networkvpn.ml%26plugin%3dobfs-local%3bobfs%3dwebsocket%3bobfs-host%3dpv.networkvpn.ml%3bobfs-uri%3d/dtvbottws%23pv.networkvpn.ml_trojan_ws
+
+ ---> Trojan-Go(WS+TLS) QV2ray
+    trojan-go://4d490835-72c8-f8de-66d4-8d2576c4d014@domain08.qiu4.ml:443?sni=pv.networkvpn.ml&type=ws&host=pv.networkvpn.ml&path=%2Fdtvbottws#pv.networkvpn.ml_trojan_ws
+
